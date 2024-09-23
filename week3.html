@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+    <head>
+        <title>Web Programming</title>
+        <meta charset="utf-8">
+        <style>
+            div.box {
+                background: blanchedalmond;
+                width: 150px;
+                height: 150px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Web programming</h1>
+        <nav style="background-color: deepskyblue">
+                <div style="color: white;">
+                    week1<span style="margin: 0 30px;"> </span>week2<span style="margin: 0 30px;"> </span>week3
+                </div>
+                <div style="color: white;">
+                    week4
+                </div>
+        </nav>
+        <hr> <hr>
+            <main>
+                <h3>웹에 관하여</h3>
+                <section>
+                    <details>
+                        <summary>웹의 기본 목적</summary>
+                        <p>웹의 기본 목적은 한 컴퓨터에서 만든 문서를 다른 컴퓨터에서 쉽게 볼 수 있게 하는 것이다.</p>
+                    </details>
+                    <details>
+                        <summary>왜 why?</summary>
+                        <p>전 세계의 컴퓨터들을 인터넷으로 연결한 시스템을 www, 즉 웹이라고 부른다</p>
+                    </details>
+                </section>
+                <br>
+                <section>
+                    <table border="1">
+                        <caption>Weekly Schedule</caption>
+                        <thead style="background-color: aqua;">
+                            <tr><th>Week</th><th>Date</th><th>Contents</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><th>1</th><th>Sept.2</th><th><ul><li>강의개요</li><li>웹의 개념과 구조</li><li>Visual Studio Code</li></ul></th></tr>
+                            <tr><th>2</th><th>Sept.9</th><th>HTML Review</th></tr>
+                            <tr><th>3</th><th>Sept.16</th><th>CSS Review</th></tr>
+                        </tbody>
+                        <tfoot>
+                            <tr><th>4</th><th>Sept.23</th><th>JavaScript</th></tr>
+                        </tfoot>
+                    </table>
+                </section>
+                <hr>
+                <ol>
+                    <section>
+                        <li id="week1"><b>week 1</b></li>
+                        <ul>
+                            <li><a href="../week1/Syllabus.pdf" target="_blank">강의 개요</a></li>
+                            <li><a href="../week1/웹의개념과구조.pdf" target="_blank">웹의 개념과 구조</a></li>
+                            <li><a href="../week1/VisualStudioCode.pdf" target="_blank">Visual Studio Code</a></li>
+                            <ol>
+                                <li>설치</li>
+                                <li>유용한 plug-ins</li>
+                                <ul>
+                                    <li>Material Theme</li>
+                                    <li>Preittier</li>
+                                    <li>indent-rainbow</li>
+                                    <li>Auto Rename Tag</li>
+                                    <li>HTML CSS Support</li>
+                                    <li>Live Server</li>
+                                </ul>
+                                <li>EMMET</li>
+                            </ol>
+                        </ul>
+                        <hr>
+                    </section>
+                    <section>
+                        <li id="week2"><a href="../week2/HTML5-Review.pdf" target="_blank"><b>Week 2: HTML Review</b></li></a>
+                        <h3>Input Types</h3>
+                        <u>Check Box</u>
+                        <br>
+                        <br>
+                        <form>
+                            <input type="checkbox" value="1"/>HTML5
+                            <input type="checkbox" value="2"/>CSS3
+                            <input type="checkbox" value="3"/>JavaScript
+                        </form>
+                        <br>
+                        <u>Radio Button</u>
+                        <br> <br>
+                        <form>
+                            <input type="radio" name="WebP" value="1"/>HTML5-Review<br>
+                            <input type="radio" name="WebP" value="2"/>CSS3<br>
+                            <input type="radio" name="WebP" value="3"/>JavaScript
+                        </form>
+                        <br>
+                        <u>Combo Box</u>
+                        <br>
+                        <form>
+                            <select name="WebP">
+                                <option value="1">HTML5</option>
+                                <option value="2">CSS3</option>
+                                <option value="3">JavaScript</option>
+                            </select>
+                        </form>
+                    </section>
+                    <hr>
+                    <section>
+                        <li id="week3"><b>Week 3: CSS Review</b></li>
+                        <br>
+                        <ul>
+                            <li>Selector: *, tag, #id, .class, 가상클래스, attribute</li>
+                            <li>Properties: backgroud-color, backgroud, color, border-color, font-size, text-align, text-decoration, font-family...</li>
+                            <li>Box Model</li>
+                            <ul>
+                                <li>block 요소, inline 요소</li>
+                                <li>margin, padding, border, height, width</li>
+                            </ul>
+                            <li>display: block, inline, inline-block</li>
+                            <li>position: absolute, relative, fixed, float</li>
+                        </ul>
+                        <div class="box"></div>
+                        <br>
+                    </section>
+                    <hr>
+                    <section>
+                        <li id="week4"><b>Week 4:</b></li>
+                        <br> <br>
+                    </section>
+                </ol>
+                <hr>
+                <footer>Copyright © 2024 by Sung-Dong All Rights Reserved</footer>
+            </main>
+    </body>
+</html>
