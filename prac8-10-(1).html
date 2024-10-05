@@ -5,10 +5,16 @@
     <title>DOM 객체 동적 삽입</title>
     <script>
         function addAnswer(obj, text) {
-            let div = document.createElement('div')
-            div.innerHTML = text;
             let o = obj.parentElement;
-            o.appendChild(div)
+            let existAnswer = obj.nextElementSibling;
+            if (existAnswer && existAnswer.tagName === "P") {
+                o.removeChild(existAnswer);
+            }
+            else {
+                let p = document.createElement("p");
+                p.innerText = text;
+                o.appendChild(p);
+            }
         }
     </script>
 </head>
