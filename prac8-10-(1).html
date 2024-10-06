@@ -5,21 +5,15 @@
     <title>DOM 객체 동적 삽입</title>
     <script>
         function addAnswer(obj, text) {
-            let o = obj.parentElement;
-            let existAnswer = obj.nextElementSibling;
-            if (existAnswer && existAnswer.tagName === "P") {
-                o.removeChild(existAnswer);
-            }
-            else {
-                let p = document.createElement("p");
-                p.innerText = text;
-                o.appendChild(p);
-            }
+            let p = document.createElement("p");    // 새로운 p라는 객체 생성
+            p.innerHTML = text; // p객체의 innerHTML에 텍스트 추가
+            let o = obj.parentElement;  // obj의 부모 객체를 찾아서 o라는 새로운 객체 생성
+            o.appendChild(p)    // o의 마지막 자식 뒤에 새로운 자식 추가
         }
     </script>
 </head>
 <body>
-    <h3>정답의 독적 삽입</h3>
+    <h3>정답의 동적 삽입</h3>
     <hr>
     <div><p>Q. 거울아 거울아 세상에서 누가 제일 예쁘니?</p>
         <button onclick="addAnswer(this, '백설공주')">답보기</button>
