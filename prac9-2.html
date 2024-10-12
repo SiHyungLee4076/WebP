@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width, initial-scale=1.0">
+    <title>실습문제 9-2</title>
+    <script>
+        function drawImage(o) {
+            let img = new Image();
+            img.src = o.value;
+            o.parentElement.appendChild(img)
+        }
+        function drawImage2(o) {
+            let img = document.getElementById('img');
+            img.src = o.value;
+        }
+    </script>
+</head>
+<body>
+    <h2>라디오 버튼을 클릭하면 이미지를 출력합니다.</h2>
+    <hr>
+    <form>
+        <input type="radio" name="fruit" value="./Images/banana.jpeg" onclick="drawImage2(this)">바나나
+        <input type="radio" name="fruit" value="./Images/mango.jpeg" onclick="drawImage2(this)">망고
+        <input type="radio" name="fruit" value="./Images/apple.jpeg" onclick="drawImage2(this)">사과
+    </form>
+    <br>
+    <img src="" id="img" alt="this is image area">
+</body>
+</html>
