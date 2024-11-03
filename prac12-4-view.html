@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습문제 12-4의 보기</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: LightBlue;
+        }
+
+        span {
+            border: 1px solid green;
+            padding: 3px;
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        td {
+            padding: 5px;
+            text-align: left;
+        }
+
+        .number {
+            width: 30px;
+        }
+
+        .date {
+            width: 80px;
+            font-weight: bold;
+        }
+
+        .content {
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <h3>일기 보기</h3>
+    <hr>
+    <script>
+        if (window.localStorage) {
+            document.write("<table>");
+            for (let i = 0; i < localStorage.length; i++) {
+                let key = localStorage.key(i);
+                let val = localStorage.getItem(key);
+                document.write("<tr>");
+                document.write("<td class='number'><span>" + (i + 1) + "</span></td>");
+                document.write("<td class='date'>" + key + "</td>");
+                document.write("<td class='content'>" + val + "</td>");
+                document.write("</tr>");
+            }
+            document.write("</table>");
+        } else {
+            alert("로컬 스토리지를 지원하지 않습니다.");
+        }
+    </script>
+</body>
+</html>

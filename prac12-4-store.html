@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습문제 12-4의 저장</title>
+    <script>
+        function store() {
+            if (!window.localStorage) {
+                alert("로컬 스토리지를 지원하지 않습니다.");
+                return;
+            }
+            let time = new Date();
+            let year = time.getFullYear();
+            let month = time.getMonth() + 1;
+            let day = time.getDate();
+            let diaryContent = document.getElementById("diaryContent").value;
+
+            if (diaryContent) {
+                let diaryDate = year + "." + month + "." + day;
+                localStorage.setItem(diaryDate, diaryContent);
+                document.getElementById("diaryContent").value = "";
+            }
+        }
+
+        function view() {
+            window.open("prac12-4-view.html", "_blank");
+        }
+    </script>
+</head>
+<body>
+    <h3>일기 쓰기</h3>
+    <hr>
+    오늘 날짜: <span id="date"></span>
+    <br>
+    <textarea id="diaryContent" rows="10" cols="50"></textarea>
+    <br>
+    <input type="button" value="저장" onclick="store()">
+    <input type="button" value="보기" onclick="view()">
+
+    <script>
+        let now = new Date();
+        document.getElementById("date").textContent = now.toLocaleDateString();
+    </script>
+</body>
+</html>
