@@ -90,6 +90,8 @@
    - t1.js
    - t2.js
    - t3.js
+   - for.js
+   - backtick.js
 
 11. Week 12 연습
    - Scope, Closure, JS function, functional programming 공부
