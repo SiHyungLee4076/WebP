@@ -61,6 +61,9 @@
    - BOM, Canvas Graphic 공부
    - prac10-5.html: 실습문제 10-5
    - prac10-5.html: 실습문제 10-6
+   - ex10-3.html: 예제 10-3
+   - ex10-04.html: 예제 10-4
+   - ex11-2.html: 예제 11-2
   
 8. Week 9 연습
    - 웹스토리지 공부
@@ -74,27 +77,33 @@
 9. Week 10 연습
    - 오디오, 비디오 제어, 웹워커 공부
    - prac13-6.html: 실습문제 13-6
+   - ex13-1.html: 예제 13-1
+   - ex13-2.html: 예제 13-2
+   - ex13-4.html: 예제 13-4
+   - ex13-6.html: 예제 13-6 + add.js
+   - ex13-8.html: 예제 13-8 + add_1to10.js
+   - ex13-10.html: 예제 13-10 + timer.js
   
 10. Week 11 연습
    - data type, ES6, hoisting, var, let, const 공부
-   - 
-   - 
-   - 
+   - dg.html + dg.js
 
 11. Week 12 연습
    - Scope, Closure, JS function, functional programming 공부
-   - 
-   - 
-   - 
+   - First-Class-FunC.js
 
 12. Week 13 연습
    - Node.js 공부
-   - 
-   - 
-   - 
+   - webserver1.js
+   - webserver2.js
 
 13. Week 14 연습
    - Express js 공부
-   - 
-   - 
-   - 
+   - funPr-practice.js
+   - app0.js
+   - app1.js
+   - app2.js
+   - app3.js
+   - app4.js
+   - app8.js
+   - login1.html
