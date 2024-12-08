@@ -87,6 +87,9 @@
 10. Week 11 연습
    - data type, ES6, hoisting, var, let, const 공부
    - dg.html + dg.js
+   - t1.js
+   - t2.js
+   - t3.js
 
 11. Week 12 연습
    - Scope, Closure, JS function, functional programming 공부
