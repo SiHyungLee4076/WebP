@@ -96,6 +96,7 @@
 11. Week 12 연습
    - Scope, Closure, JS function, functional programming 공부
    - First-Class-FunC.js
+   - param.js
 
 12. Week 13 연습
    - Node.js 공부
